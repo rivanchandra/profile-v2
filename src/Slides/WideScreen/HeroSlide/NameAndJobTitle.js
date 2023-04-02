@@ -4,14 +4,14 @@ import NameReveal from './NameReveal';
 import TitleReveal from './TitleReveal';
 
 const Container = styled.div`
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    width:100%;
-    background-color: white;
-    /* border: 1px solid blue; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+  width:100%;
+  /* background-color: white; */
+  /* border: 1px solid blue; */
 `;
 
 class NameAndJobTitle extends Component {

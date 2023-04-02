@@ -1,29 +1,53 @@
 @font-face {
-font-family: 'AvenirLight';
-src: url('./Fonts/Avenir/Avenir-Light-07.ttf');
+	font-family: 'AvenirLight';
+	src: url('./Fonts/Avenir/Avenir-Light-07.ttf');
 }
 
 @font-face {
-font-family: 'AvenirRoman';
-src: url('./Fonts/Avenir/Avenir-Roman-12.ttf');
+	font-family: 'AvenirRoman';
+	src: url('./Fonts/Avenir/Avenir-Roman-12.ttf');
 }
 
 @font-face {
-font-family: 'AvenirBook';
-src: url('./Fonts/Avenir/Avenir-Book-01.ttf');
+	font-family: 'AvenirBook';
+	src: url('./Fonts/Avenir/Avenir-Book-01.ttf');
 }
 
 @font-face {
-font-family: 'AvenirMedium';
-src: url('./Fonts/Avenir/Avenir-Medium-09.ttf');
+	font-family: 'AvenirMedium';
+	src: url('./Fonts/Avenir/Avenir-Medium-09.ttf');
 }
 
 @font-face {
-font-family: 'AvenirHeavy';
-src: url('./Fonts/Avenir/Avenir-Heavy-05.ttf');
+	font-family: 'AvenirHeavy';
+	src: url('./Fonts/Avenir/Avenir-Heavy-05.ttf');
 }
 
 @font-face {
-font-family: 'Valencia';
-src: url('./Fonts/Valencia/Valencia.ttf');
+	font-family: 'Valencia';
+	src: url('./Fonts/Valencia/Valencia.ttf');
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
+}
+
+body {
+  background: linear-gradient(-45deg, #ffffff 0%, #ffffff 13%, #fffefe 25%, #fffefe 38%, #ffffff 50%, #dbdbdb 62%, #d4d4d4 75%, #d5d5d5 87%, #c4c4c4 100%);;
+  background-size: 400% 400%;
+  position: relative;
+  animation: animate 10s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

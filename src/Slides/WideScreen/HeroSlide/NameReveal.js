@@ -12,27 +12,31 @@ width:100%;
 
 const moveUp = init => keyframes`
 0%{
-    transform: translateY(${init}px);
+  opacity: 0;
+  transform: translateY(${init}px);
 }
 100%{
-    transform: translateY(0px);
+  opacity: 1;
+  transform: translateY(0px);
 }
 `;
 
-const hideWhiteBlocks = () => keyframes`
-0%{
-    opacity: 1;
-    height: 35vh;
-}
-100%{
-    opacity: 0;
-    height: 0vh;
-}
-`;
+// const hideWhiteBlocks = () => keyframes`
+// 0%{
+//     opacity: 1;
+//     height: 35vh;
+// }
+// 100%{
+//     opacity: 0;
+//     height: 0vh;
+// }
+// `;
 
 const TextToReveal = styled.div`
   font-family: ${props => props.fontFam};
   text-align:center;
+  animation-delay: 0s;
+  opacity: 0;
   @media ${device.tablet} {
     font-size: 100px;
     animation: ${props => (props.reveal ? moveUp(100) : 'none')} 1s cubic-bezier(0, 0.1, .12, .99) forwards;
@@ -55,16 +59,16 @@ const TextToReveal = styled.div`
   }
 `;
 
-const WhiteBlock = styled.div`
-position: absolute;
-background-color: white;
-margin-right:100%;
-width: 120%;
-height: 35vh;
-animation: ${hideWhiteBlocks} 0.5s linear forwards;
-animation-delay: 2s;
-/* border: 1px solid grey; */
-`;
+// const WhiteBlock = styled.div`
+// position: absolute;
+// background-color: white;
+// margin-right:100%;
+// width: 120%;
+// height: 35vh;
+// animation: ${hideWhiteBlocks} 0.5s linear forwards;
+// animation-delay: 2s;
+// /* border: 1px solid grey; */
+// `;
 
 
 class NameReveal extends Component {
@@ -98,7 +102,7 @@ class NameReveal extends Component {
         >
           {text}
         </TextToReveal>
-        <WhiteBlock />
+        {/* <WhiteBlock /> */}
       </Stage>
     );
   }
