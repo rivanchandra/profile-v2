@@ -21,6 +21,10 @@ const AboutMeTitle = styled.div.attrs({
   color: #EEE;
   top:5%;
   left:-15%;
+  z-index:-1;
+  @media ${device.tablet} {
+    font-size: 100px;
+  }
   @media ${device.laptop} {
     font-size: 180px;
   }

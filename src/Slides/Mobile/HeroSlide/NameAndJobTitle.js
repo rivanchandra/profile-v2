@@ -9,22 +9,22 @@ const Container = styled.section`
     align-items: center;
     height:50vh;
     width:100%;
-    background-color: white;
+    /* background-color: white; */
     /* border: 1px solid blue; */
 `;
 
 const Name = styled.div`
-  font-family: 'Valencia';
+  font-family: 'Poppins', sans-serif;
   text-align:center;
   padding-right: 10px;
   @media ${device.mobileS} {
-    font-size: 70px;
+    font-size: 30px;
   }
   @media ${device.mobileM} {
-    font-size: 80px;
+    font-size: 40px;
   }
   @media ${device.mobileL} {
-    font-size: 90px;
+    font-size: 50px;
   }
   @media ${device.tablet} {
     font-size: 150px;
@@ -35,7 +35,7 @@ const Name = styled.div`
 `;
 
 const Title = styled.div`
-  font-family: 'AvenirRoman';
+  font-family: 'Ubuntu', sans-serif;
   text-align:center;
   margin-top: 10px;
   @media ${device.mobileS} {
@@ -59,8 +59,8 @@ class NameAndJobTitle extends Component {
   render() {
     return (
       <Container>
-        <Name>Suresh Murali</Name>
-        <Title>FRONT-END DEVELOPER & UI/UX DESIGNER</Title>
+        <Name>Rivan Chandra</Name>
+        <Title>Software Developer</Title>
       </Container>
     );
   }

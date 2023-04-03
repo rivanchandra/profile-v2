@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled, { keyframes } from 'styled-components';
 import PropTypes from 'prop-types';
 import device from '../../../Assets/Responsive/breakpoints';
+import avatar from '../../../Assets/Images/Avatar/Rivan.jpg';
 
 const Stage = styled.div`
 position: relative;
@@ -96,6 +97,7 @@ class NameReveal extends Component {
     const { reveal } = this.state;
     return (
       <Stage>
+        <img className="avatar" src={avatar} alt="avatar" />
         <TextToReveal
           fontFam={fontFam}
           reveal={reveal}
