@@ -1,4 +1,4 @@
-# Suresh Murali's Personal Portfolio website
+# Rivan Chandra's Personal Portfolio website
 
 Website link: [sureshmurali.github.io](sureshmurali.github.io)
 
@@ -20,7 +20,7 @@ Website link: [sureshmurali.github.io](sureshmurali.github.io)
 
 The MIT License (MIT)
 
-Copyright (c) 2019 Suresh Murali
+Copyright (c) 2023 Rivan Chandra
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import teslaTyreImg from '../../../../Assets/Images/Tesla/Tyre.png';
-import teslaHeatImg from '../../../../Assets/Images/Tesla/Heat.png';
-import teslaLockImg from '../../../../Assets/Images/Tesla/Lock.png';
-import teslaBatteryImg from '../../../../Assets/Images/Tesla/Battery.png';
 
+import beautify from '../../../../Assets/Images/Personal/beautify.png';
+import lofsong from '../../../../Assets/Images/Personal/lofsong.png';
+import monthlyexpen from '../../../../Assets/Images/Personal/monthlyexpen.png';
+import personal from '../../../../Assets/Images/Personal/personal.png';
 
-const Heat = styled.img.attrs({
+const Beautify = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 15}%)`,
+    transform: `translate(0px,-${(scroll) * 10}%) scale(0.8)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
 bottom: -90vh;
-left:0vw;
+right:8vw;
 /* border: 1px dashed red; */
-height: 80vh; 
+width: 45vw;
 `;
 
-const Tyre = styled.img.attrs({
+const Lofsong = styled.img.attrs({
   style: ({ scroll }) => ({
     transform: `translate(0px,-${(scroll) * 8}%) scale(0.9)`,
   }),
@@ -30,36 +30,36 @@ position: absolute;
 bottom:-45vh;
 right: 2vw;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(0.6px);
+width: 45vw;
+/* filter: blur(0.6px); */
 `;
 
-const Battery = styled.img.attrs({
+const Monthlyexpen = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 5}%) scale(0.7)`,
+    transform: `translate(0px,-${(scroll) * 5}%) scale(0.9)`,
+  }),
+})`
+transition: transform 0.2s ease-out;
+bottom:-65vh;
+left:2vw;
+position: absolute;
+/* border: 1px dashed red; */
+width: 45vw;
+/* filter: blur(0.8px); */
+`;
+
+const Personal = styled.img.attrs({
+  style: ({ scroll }) => ({
+    transform: `translate(0px,-${(scroll) * 2}%) scale(0.8)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 bottom:-75vh;
-left:2vw;
-position: absolute;
-/* border: 1px dashed red; */
-height: 80vh;
-filter: blur(0.8px);
-`;
-
-const Lock = styled.img.attrs({
-  style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.6)`,
-  }),
-})`
-transition: transform 0.2s ease-out;
-bottom:-55vh;
 right: 5vw;
 position: absolute;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(1.2px);
+width: 45vw;
+/* filter: blur(1.2px); */
 `;
 
 class TeslaImages extends Component {
@@ -75,10 +75,10 @@ class TeslaImages extends Component {
 
     return (
       <React.Fragment>
-        <Lock src={teslaLockImg} scroll={scrollPercent} alt="teslaLock" />
-        <Battery src={teslaBatteryImg} scroll={scrollPercent} alt="teslaBattery" />
-        <Tyre src={teslaTyreImg} scroll={scrollPercent} alt="teslaTyre" />
-        <Heat src={teslaHeatImg} scroll={scrollPercent} alt="teslaHeat" />
+        <Beautify src={beautify} scroll={scrollPercent} alt="beautify" />
+        <Lofsong src={lofsong} scroll={scrollPercent} alt="lofsong" />
+        <Monthlyexpen src={monthlyexpen} scroll={scrollPercent} alt="monthlyexpen" />
+        <Personal src={personal} scroll={scrollPercent} alt="personal" />
       </React.Fragment>
     );
   }

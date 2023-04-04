@@ -80,32 +80,32 @@ class Skills extends Component {
         <SkillsTitle>SKILLS</SkillsTitle>
         <SkillsList>
           <div>
+            HTML/CSS/JS
+            <br />
             React
             <br />
-            React Native
+            Vue
             <br />
-            Node.js
-            <br />
-            <br />
-            Rapid Prototyping
-            <br />
-            Functional Programming
-            <br />
-            Interaction Development
-            <br />
-            <br />
-            Responsive Design
-            <br />
-            Testing & Debugging
-            <br />
-            Application Architecture
-            <br />
-            <br />
-            Figma & Sketch
             <br />
             Design system
             <br />
-            Abstract
+            Responsive & adaptive Design
+            <br />
+            Performance optimization
+            <br />
+            <br />
+            Communication & collaboration
+            <br />
+            Leadership & mentorship
+            <br />
+            User experience
+            <br />
+            <br />
+            Next
+            <br />
+            API
+            <br />
+            SQL
             <br />
           </div>
         </SkillsList>

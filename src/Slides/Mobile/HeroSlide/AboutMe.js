@@ -43,8 +43,8 @@ class AboutMe extends Component {
     return (
       <Container>
         <AboutMeDescription>
-          Front-end developer who cares deeply about user experience.
-          Serious passion for UI design and new technologies.
+          {/* eslint-disable-next-line max-len */}
+          Client centric software developer with high proficent in web development, software system analysis and database design.
         </AboutMeDescription>
       </Container>
     );

@@ -90,12 +90,10 @@ class Contact extends Component {
       <Container>
         <ContactTitle>CONTACT</ContactTitle>
         <SocialMediaIcons>
-          <SocialLogo imgURL={twitterImg} alternate="twitter" redirectURL="https://twitter.com/sureshmurali29" />
-          <SocialLogo imgURL={githubImg} alternate="github" redirectURL="https://github.com/sureshmurali" />
-          <SocialLogo imgURL={mailImg} alternate="mail" redirectURL="mailto:sureshmurali29@gmail.com" />
-          <SocialLogo imgURL={instaImg} alternate="insta" redirectURL="https://www.instagram.com/sureshmurali_/" />
-          <SocialLogo imgURL={dribbbleImg} alternate="dribbble" redirectURL="https://dribbble.com/sureshmurali29" />
-          <SocialLogo imgURL={linkedInImg} alternate="linkedin" redirectURL="https://www.linkedin.com/in/sureshmurali29" />
+          <SocialLogo imgURL={githubImg} alternate="Github" redirectURL="https://github.com/rivanchandra" />
+          <SocialLogo imgURL={mailImg} alternate="Mail" redirectURL="mailto:rivanchan@gmail.com" />
+          <SocialLogo imgURL={instaImg} alternate="Instagram" redirectURL="https://www.instagram.com/rivan_chandra" />
+          <SocialLogo imgURL={linkedInImg} alternate="Linkedin" redirectURL="https://www.linkedin.com/in/rivanchandra" />
         </SocialMediaIcons>
       </Container>
     );

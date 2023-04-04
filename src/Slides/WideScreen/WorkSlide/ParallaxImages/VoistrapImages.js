@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import voistrapHomeImg from '../../../../Assets/Images/Voistrap/Home.png';
-import voistrapMeetingsImg from '../../../../Assets/Images/Voistrap/Meetings.png';
-import voistrapPeopleImg from '../../../../Assets/Images/Voistrap/People.png';
-import voistrapScoreImg from '../../../../Assets/Images/Voistrap/Score.png';
+import digitime from '../../../../Assets/Images/WebApp/digitime.png';
+import booking from '../../../../Assets/Images/WebApp/booking.png';
+import skyjed from '../../../../Assets/Images/WebApp/skyjed.png';
+import yearglance from '../../../../Assets/Images/WebApp/yearglance.png';
 
 
-const VoistrapPhoneHome = styled.img.attrs({
+const Yearglance = styled.img.attrs({
   style: ({ scroll }) => ({
     transform: `translate(0px,-${(scroll) * 15}%)`,
   }),
@@ -17,49 +17,49 @@ position: absolute;
 bottom: -90vh;
 left:0vw;
 /* border: 1px dashed red; */
-height: 80vh; 
+width: 45vw; 
 `;
 
-const VoistrapPhoneMeetings = styled.img.attrs({
+const Skyjed = styled.img.attrs({
   style: ({ scroll }) => ({
     transform: `translate(0px,-${(scroll) * 8}%) scale(0.9)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom:-45vh;
+bottom:-95vh;
 right: 2vw;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(0.6px);
+width: 45vw;
+/* filter: blur(0.6px); */
 `;
 
-const VoistrapPhoneScore = styled.img.attrs({
+const Booking = styled.img.attrs({
   style: ({ scroll }) => ({
     transform: `translate(0px,-${(scroll) * 5}%) scale(0.7)`,
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-75vh;
+bottom:-95vh;
 left:2vw;
 position: absolute;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(0.8px);
+width: 45vw;
+/* filter: blur(0.8px); */
 `;
 
-const VoistrapPhonePeople = styled.img.attrs({
+const Digitime = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.6)`,
+    transform: `translate(0px,-${(scroll) * 2}%) scale(0.8)`,
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-55vh;
+bottom:-85vh;
 right: 5vw;
 position: absolute;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(1.2px);
+width: 45vw;
+/* filter: blur(1.2px); */
 `;
 
 class VoistrapImages extends Component {
@@ -74,10 +74,10 @@ class VoistrapImages extends Component {
     scrollPercent -= scrollOffsetInPercent;
     return (
       <React.Fragment>
-        <VoistrapPhonePeople src={voistrapPeopleImg} scroll={scrollPercent} alt="voistrapPeople" />
-        <VoistrapPhoneScore src={voistrapScoreImg} scroll={scrollPercent} alt="voistrapScore" />
-        <VoistrapPhoneMeetings src={voistrapMeetingsImg} scroll={scrollPercent} alt="voistrapMeetings" />
-        <VoistrapPhoneHome src={voistrapHomeImg} scroll={scrollPercent} alt="voistrapHome" />
+        <Digitime src={digitime} scroll={scrollPercent} alt="digitime" />
+        <Booking src={booking} scroll={scrollPercent} alt="booking" />
+        <Skyjed src={skyjed} scroll={scrollPercent} alt="skyjed" />
+        <Yearglance src={yearglance} scroll={scrollPercent} alt="yearglance" />
       </React.Fragment>
     );
   }

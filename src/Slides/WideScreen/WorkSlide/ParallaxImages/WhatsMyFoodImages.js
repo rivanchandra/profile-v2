@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import homeImg from '../../../../Assets/Images/WhatsMyFood/Home.png';
-import restaurantImg from '../../../../Assets/Images/WhatsMyFood/Restaurant.png';
-import addRestaurantImg from '../../../../Assets/Images/WhatsMyFood/AddRestaurant.png';
-import addFoodImg from '../../../../Assets/Images/WhatsMyFood/AddFood.png';
+
+import dutaponsel from '../../../../Assets/Images/Ecommerce/dutaponsel.png';
+import petcann from '../../../../Assets/Images/Ecommerce/petcann.png';
+import urbanleaf from '../../../../Assets/Images/Ecommerce/urbanleaf.png';
+import greenship from '../../../../Assets/Images/Ecommerce/greenship.png';
 
 const Restaurant = styled.img.attrs({
   style: ({ scroll }) => ({
@@ -13,10 +14,10 @@ const Restaurant = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -90vh;
+bottom: -120vh;
 left:0vw;
 /* border: 1px dashed red; */
-height: 80vh; 
+width: 45vw;
 `;
 
 const Home = styled.img.attrs({
@@ -26,11 +27,11 @@ const Home = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom:-45vh;
-right: 2vw;
+bottom:-75vh;
+right: 9vw;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(0.6px);
+width: 45vw;
+/* filter: blur(0.6px); */
 `;
 
 const AddFood = styled.img.attrs({
@@ -39,12 +40,12 @@ const AddFood = styled.img.attrs({
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-75vh;
-left:2vw;
+bottom:-60vh;
+left:4vw;
 position: absolute;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(0.8px);
+width: 45vw;
+/* filter: blur(0.8px); */
 `;
 
 const AddRestaurant = styled.img.attrs({
@@ -53,12 +54,12 @@ const AddRestaurant = styled.img.attrs({
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-55vh;
-right: 5vw;
+bottom:-85vh;
+right: 8vw;
 position: absolute;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(1.2px);
+width: 50vw;
+/* filter: blur(1.2px); */
 `;
 
 class WhatsMyFoodImages extends Component {
@@ -74,10 +75,10 @@ class WhatsMyFoodImages extends Component {
     scrollPercent -= scrollOffsetInPercent;
     return (
       <React.Fragment>
-        <AddFood src={addFoodImg} scroll={scrollPercent} alt="addFood" />
-        <AddRestaurant src={addRestaurantImg} scroll={scrollPercent} alt="addRestaurant" />
-        <Home src={homeImg} scroll={scrollPercent} alt="Home" />
-        <Restaurant src={restaurantImg} scroll={scrollPercent} alt="Restaurant" />
+        <AddFood src={dutaponsel} scroll={scrollPercent} alt="dutaponsel" />
+        <AddRestaurant src={petcann} scroll={scrollPercent} alt="petcann" />
+        <Home src={urbanleaf} scroll={scrollPercent} alt="urbanleaf" />
+        <Restaurant src={greenship} scroll={scrollPercent} alt="greenship" />
       </React.Fragment>
     );
   }

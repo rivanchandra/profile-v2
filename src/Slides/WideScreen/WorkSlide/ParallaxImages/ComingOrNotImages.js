@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import cmgOrNotTabletImg from '../../../../Assets/Images/ComingOrNot/Tablet.png';
-import cmgOrNotIphoneImg from '../../../../Assets/Images/ComingOrNot/Iphone.png';
 
+import backinmotion from '../../../../Assets/Images/Website/backinmotion.png';
+import cantabile from '../../../../Assets/Images/Website/cantabile.png';
+import frostfence from '../../../../Assets/Images/Website/frostfence.png';
+import carrotsolutions from '../../../../Assets/Images/Website/carrotsolutions.png';
 
-const Iphone = styled.img.attrs({
+const Backinmotion = styled.img.attrs({
   style: ({ scroll }) => ({
     transform: `translate(0px,-${(scroll) * 12}%)`,
   }),
@@ -15,10 +17,10 @@ position: absolute;
 bottom:-70vh;
 left: 0vw;
 /* border: 1px dashed red; */
-height: 80vh;
+width: 45vw;
 `;
 
-const Tablet = styled.img.attrs({
+const Cantabile = styled.img.attrs({
   style: ({ scroll }) => ({
     transform: `translate(0px,-${(scroll) * 2}%) scale(0.94)`,
   }),
@@ -28,8 +30,36 @@ position: absolute;
 bottom: -40vh;
 right:0vw;
 /* border: 1px dashed red; */
-height: 80vh; 
-filter: blur(0.6px);
+width: 45vw; 
+/* filter: blur(0.6px); */
+`;
+
+const Frostfence = styled.img.attrs({
+  style: ({ scroll }) => ({
+    transform: `translate(0px,-${(scroll) * 6}%) scale(0.9)`,
+  }),
+})`
+transition: transform 0.2s ease-out;
+bottom:-45vh;
+left:2vw;
+position: absolute;
+/* border: 1px dashed red; */
+width: 45vw;
+/* filter: blur(0.8px); */
+`;
+
+const Carrotsolutions = styled.img.attrs({
+  style: ({ scroll }) => ({
+    transform: `translate(0px,-${(scroll) * 3}%) scale(0.6)`,
+  }),
+})`
+transition: transform 0.2s ease-out;
+bottom:-85vh;
+right: 8vw;
+position: absolute;
+/* border: 1px dashed red; */
+width: 50vw;
+/* filter: blur(1.2px); */
 `;
 
 class ComingOrNotImages extends Component {
@@ -45,8 +75,10 @@ class ComingOrNotImages extends Component {
 
     return (
       <React.Fragment>
-        <Tablet src={cmgOrNotTabletImg} scroll={scrollPercent} alt="cmgOrNotTablet" />
-        <Iphone src={cmgOrNotIphoneImg} scroll={scrollPercent} alt="cmgOrNotIphone" />
+        <Backinmotion src={backinmotion} scroll={scrollPercent} alt="backinmotion" />
+        <Cantabile src={cantabile} scroll={scrollPercent} alt="cantabile" />
+        <Frostfence src={frostfence} scroll={scrollPercent} alt="frostfence" />
+        <Carrotsolutions src={carrotsolutions} scroll={scrollPercent} alt="carrotsolutions" />
       </React.Fragment>
     );
   }

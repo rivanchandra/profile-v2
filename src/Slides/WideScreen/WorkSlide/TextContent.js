@@ -128,7 +128,6 @@ color: #222;
 animation: ${appearText} 0.5s linear forwards;
 animation-delay: 0s;
 position: relative;
-}
 `;
 
 const BlockTextRevealNoAnim = styled.span`

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import device from '../../../Assets/Responsive/breakpoints';
+import avatar from '../../../Assets/Images/Avatar/Rivan.jpg';
 
 const Container = styled.section`
     display: flex;
@@ -59,6 +60,7 @@ class NameAndJobTitle extends Component {
   render() {
     return (
       <Container>
+        <img className="avatar" src={avatar} alt="avatar" />
         <Name>Rivan Chandra</Name>
         <Title>Software Developer</Title>
       </Container>

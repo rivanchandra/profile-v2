@@ -89,6 +89,7 @@ class AboutMe extends Component {
       <Container>
         <AboutMeTitle scrollPercent={scrollPercent}>ABOUT ME</AboutMeTitle>
         <AboutMeDescription>
+          {/* eslint-disable-next-line max-len */}
           Client centric software developer with over 7 years of working experience in the IT industry. High proficent in web development, software system analysis and database design.
         </AboutMeDescription>
       </Container>
