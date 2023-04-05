@@ -27,56 +27,42 @@ class Work extends Component {
         projectName: '',
         projectDesc: '',
         projectType: '',
-        roles: [''],
+        techs: [''],
       },
       {
         number: '01',
-        projectName: 'Voistrap',
+        projectName: '',
         projectDesc: 'IoT project to give workplace insights using indoor localization, voice and schedule.',
-        projectType: 'iOS APP',
-        roles: ['Full Stack Developer', 'UI Designer'],
+        projectType: 'Web APP',
+        techs: ['React', 'Vue', 'API', 'MySQL'],
       },
       {
         number: '02',
         projectName: 'WhatsMyFood',
         projectDesc: 'iOS app to remember your fav food at each restaurant you eat.',
-        projectType: 'iOS APP',
-        roles: ['Front-end Developer', 'UI Designer'],
+        projectType: 'ECommerce',
+        techs: ['Prestashop', 'DynamicWeb', 'eConSolutions'],
       },
       {
         number: '03',
         projectName: 'ComingOrNot',
         projectDesc: 'Event planner web app that strives to ease the work of an organizer, conduct events in a less chaotic way.',
-        projectType: 'WEB APP',
-        roles: ['Front-end Developer', 'UI Designer'],
+        projectType: 'Website',
+        techs: ['Wordpress', 'Expression Engine2'],
       },
       {
         number: '04',
         projectName: 'Tesla app',
         projectDesc: 'iOS app concept to control Tesla cars remotely.',
-        projectType: 'iOS APP CONCEPT',
-        roles: ['UI Designer'],
-      },
-      {
-        number: '05',
-        projectName: 'Video portal',
-        projectDesc: 'Internal video portal to deliver news to employees all over the world.',
-        projectType: 'WEB APP',
-        roles: ['Full Stack Developer', 'UI Designer'],
-      },
-      {
-        number: '06',
-        projectName: 'Voistrap demo',
-        projectDesc: 'Web app project to give workplace insights using indoor localization, voice and schedule.',
-        projectType: 'WEB APP',
-        roles: ['Full Stack Developer', 'UI Designer'],
+        projectType: 'Personal Projects',
+        techs: ['React', 'NextJS', 'Firebase', 'API'],
       },
       {
         number: '',
         projectName: '',
         projectDesc: '',
         projectType: '',
-        roles: [''],
+        techs: [''],
       },
     ];
   }
@@ -127,7 +113,7 @@ class Work extends Component {
         projectName={this.workDetails[slideNumber].projectName}
         projectDesc={this.workDetails[slideNumber].projectDesc}
         projectType={this.workDetails[slideNumber].projectType}
-        roles={this.workDetails[slideNumber].roles}
+        techs={this.workDetails[slideNumber].techs}
         refreshToggle={refresh}
       />
     );

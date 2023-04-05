@@ -11,19 +11,19 @@ const Container = styled.section`
     justify-content: center;
     align-content: flex-start;
     @media ${device.mobileS} {
-    padding-left:60px;
+    padding-left:15px;
     }
     @media ${device.mobileM} {
-    padding-left:60px;
+    padding-left:15px;
     }
     @media ${device.mobileL} {
-    padding-left:60px;
+    padding-left:30px;
     }
     @media ${device.tablet} {
-    padding-left:90px;
+    padding-left:3px;
     }
     @media ${device.laptop} {
-    padding-left:120px;
+    padding-left:60px;
     }
 `;
 

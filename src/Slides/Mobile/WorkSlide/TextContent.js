@@ -15,7 +15,7 @@ width: 100%;
 `;
 
 const ProjectName = styled.div`
-  font-family: 'AvenirHeavy';
+  font-family: 'Ubuntu';
   @media ${device.mobileS} {
     font-size: 40px;
   }
@@ -36,7 +36,7 @@ const ProjectName = styled.div`
 
 const ProjectDesc = styled.div`
   padding-top:2%;
-  font-family: 'AvenirBook';
+  font-family: 'Ubuntu';
   @media ${device.laptopL} {
     font-size: 30px;
   }
@@ -48,7 +48,7 @@ const ProjectDesc = styled.div`
 
 const MyRole = styled.div`
   padding-top:5%;
-  font-family: 'AvenirMedium';
+  font-family: 'Ubuntu';
   @media ${device.laptopL} {
     font-size: 30px;
   }
@@ -59,7 +59,7 @@ const MyRole = styled.div`
 `;
 
 const ProjectID = styled.div`
-  font-family: 'AvenirHeavy';
+  font-family: 'Ubuntu';
   @media ${device.laptopL} {
     font-size: 30px;
   }
@@ -71,7 +71,7 @@ const ProjectID = styled.div`
 `;
 
 const ProjectType = styled.div`
-  font-family: 'AvenirHeavy';
+  font-family: 'Ubuntu';
   @media ${device.laptopL} {
     font-size: 30px;
   }
@@ -102,56 +102,43 @@ height: 100%;
 
 const appearText = () => keyframes`
 0%{
-  color: #FFF;
-}
-100%{
-  color: #333;
-}
-`;
-
-const revBlock = () => keyframes`
-0%{
-    left: 0;
-    width: 0%
+    left: -100%;
 }
 50%{
-    left:0%;
-    width:100%
+    left:-50%;
 }
 100%{
-    left:100%;
-    width:0%
+    left:0;
 }
 `;
-
 
 let BlockTextReveal = styled.span`
 `;
 
 const BlockTextRevealQuick = styled.span`
 display:${props => (props.inline ? 'inline' : 'block')};
-color: #FFF;
-animation: ${appearText} 0.0001s linear forwards;
-animation-delay: 0.5s;
+color: #222;
+animation: ${appearText} 0.5s linear forwards;
+animation-delay: 0s;
 position: relative;
-
-
-
-&::after{
-content:'';
-top:0;
-left:0;
-position:absolute;
-width:0%;
-height:100%;
-background: #222;
-animation: ${revBlock} 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-animation-delay:0s;
-}
 `;
 
 const BlockTextRevealNoAnim = styled.span`
 
+`;
+
+const BlockTextChips = styled.span`
+display: ${props => (props.text ? 'inline-block' : 'none')};
+background: #383838;
+color: white;
+padding: 5px 12px;
+border-radius: 32px;
+font-size: 13px;
+margin-right: 5px;
+
+&:hover{
+  background: #1a1a1a;
+}
 `;
 
 class TextContent extends Component {
@@ -181,7 +168,7 @@ class TextContent extends Component {
 
   render() {
     const {
-      number, projectName, projectDesc, roles, projectType, refreshToggle,
+      number, projectName, projectDesc, techs, projectType, refreshToggle,
     } = this.props;
     return (
       <TextContainer>
@@ -199,16 +186,11 @@ class TextContent extends Component {
             </ProjectName>
             <MyRole>
               <BlockTextReveal refreshToggle={refreshToggle} inline>
-                {roles.map((role, index, arr) => (index === arr.length - 1 ? (
-                  <span key={role}>
-                    {role}
-                  </span>
-                ) : (
-                  <span key={role}>
-                    {role}
-                        &nbsp; • &nbsp;
-                  </span>
-                )))}
+                {techs.map(tech => (
+                  <BlockTextChips key={tech} refreshToggle={refreshToggle} text={tech}>
+                    {tech}
+                  </BlockTextChips>
+                ))}
               </BlockTextReveal>
             </MyRole>
             <ProjectDesc>
@@ -234,7 +216,7 @@ TextContent.propTypes = {
   projectName: PropTypes.string.isRequired,
   projectDesc: PropTypes.string.isRequired,
   projectType: PropTypes.string.isRequired,
-  roles: PropTypes.array.isRequired,
+  techs: PropTypes.array.isRequired,
   refreshToggle: PropTypes.bool.isRequired,
 };
 
