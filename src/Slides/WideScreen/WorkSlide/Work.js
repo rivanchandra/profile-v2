@@ -51,7 +51,7 @@ class Work extends Component {
       },
       {
         number: '04',
-        projectName: 'Tesla app',
+        projectName: '',
         projectDesc: 'Captivating web apps with unique content and concept, allowing for self-expression and creativity.',
         projectType: 'Personal Projects',
         techs: ['React', 'NextJS', 'Firebase', 'API'],
