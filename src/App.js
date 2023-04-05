@@ -40,16 +40,28 @@ class App extends Component {
         <MediaQuery query="(min-device-width: 1224px)">
           <Suspense fallback={<></>}>
             <WideScreenHero />
+          </Suspense>
+          <Suspense fallback={<></>}>
             <WideScreenWork />
+          </Suspense>
+          <Suspense fallback={<></>}>
             <WideScreenSkills />
+          </Suspense>
+          <Suspense fallback={<></>}>
             <WideScreenContact />
           </Suspense>
         </MediaQuery>
         <MediaQuery query="(max-device-width: 1224px)">
           <Suspense fallback={<></>}>
             <MobileHero />
+          </Suspense>
+          <Suspense fallback={<></>}>
             <MobileWork />
+          </Suspense>
+          <Suspense fallback={<></>}>
             <MobileSkills />
+          </Suspense>
+          <Suspense fallback={<></>}>
             <MobileContact />
           </Suspense>
         </MediaQuery>
