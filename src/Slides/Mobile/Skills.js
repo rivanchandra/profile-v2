@@ -28,7 +28,7 @@ const Container = styled.section`
 `;
 
 const SkillsTitle = styled.div`
-  font-family: 'AvenirHeavy';
+  font-family: 'Ubuntu';
   color: #000;
   @media ${device.mobileS} {
     font-size: 40px;
@@ -48,7 +48,7 @@ const SkillsTitle = styled.div`
 `;
 
 const SkillsList = styled.div`
-  font-family: 'AvenirRoman';
+  font-family: 'Ubuntu';
   z-index: 1;
   
   @media ${device.mobileS} {

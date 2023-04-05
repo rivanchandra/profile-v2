@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import vhCheck from 'vh-check';
-import VoistrapImages from './ParallaxImages/VoistrapImages';
-import WhatsMyFoodImages from './ParallaxImages/WhatsMyFoodImages';
-import ComingOrNotImages from './ParallaxImages/ComingOrNotImages';
-import TeslaImages from './ParallaxImages/TeslaImages';
+import WebApp from './ParallaxImages/WebApp';
+import Ecommerce from './ParallaxImages/Ecommerce';
+import Website from './ParallaxImages/Website';
+import PersonalProjects from './ParallaxImages/PersonalProjects';
 // import KosenImages from './ParallaxImages/KosenImages';
 // import VoistrapWebImages from './ParallaxImages/VoistrapWebImages';
 
@@ -69,7 +69,7 @@ class ImageContent extends Component {
     return (
       <ImageContainer>
         <ImageBox height={boxHeight}>
-          <VoistrapImages
+          <WebApp
             boxHeight={boxHeight}
             index={1}
             scrollPercent={scrollPercent}
@@ -78,7 +78,7 @@ class ImageContent extends Component {
           />
         </ImageBox>
         <ImageBox height={boxHeight}>
-          <WhatsMyFoodImages
+          <Ecommerce
             boxHeight={boxHeight}
             index={2}
             scrollPercent={scrollPercent}
@@ -87,7 +87,7 @@ class ImageContent extends Component {
           />
         </ImageBox>
         <ImageBox height={boxHeight}>
-          <ComingOrNotImages
+          <Website
             boxHeight={boxHeight}
             index={3}
             scrollPercent={scrollPercent}
@@ -96,7 +96,7 @@ class ImageContent extends Component {
           />
         </ImageBox>
         <ImageBox height={boxHeight}>
-          <TeslaImages
+          <PersonalProjects
             boxHeight={boxHeight}
             index={4}
             scrollPercent={scrollPercent}

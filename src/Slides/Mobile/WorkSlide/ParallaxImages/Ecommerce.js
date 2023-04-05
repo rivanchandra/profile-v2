@@ -1,71 +1,71 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import homeImg from '../../../../Assets/Images/WhatsMyFood/Home.png';
-import restaurantImg from '../../../../Assets/Images/WhatsMyFood/Restaurant.png';
-import addRestaurantImg from '../../../../Assets/Images/WhatsMyFood/AddRestaurant.png';
-import addFoodImg from '../../../../Assets/Images/WhatsMyFood/AddFood.png';
+import dutaponsel from '../../../../Assets/Images/Ecommerce/dutaponsel.png';
+import petcann from '../../../../Assets/Images/Ecommerce/petcann.png';
+import urbanleaf from '../../../../Assets/Images/Ecommerce/urbanleaf.png';
+import greenship from '../../../../Assets/Images/Ecommerce/greenship.png';
 
-const Restaurant = styled.img.attrs({
+const Dutaponsel = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 15}%) scale(0.7)`,
+    transform: `translate(0px,-${(scroll) * 8}%)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -170vh;
+bottom: -60vh;
 transform-origin: left center;
 left:2vw;
 /* border: 1px dashed red; */
-height: 80vh; 
+width:75vw;
 `;
 
-const Home = styled.img.attrs({
+const Petcann = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 8.5}%) scale(0.62)`,
+    transform: `translate(0px,-${(scroll) * 5}%)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom:-125vh;
+bottom:-75vh;
 right: 2vw;
 transform-origin: right center;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(0.6px);
+width:75vw;
+/* filter: blur(0.6px); */
 `;
 
-const AddFood = styled.img.attrs({
+const Urbanleaf = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 3.5}%) scale(0.5)`,
+    transform: `translate(0px,-${(scroll) * 3.5}%)`,
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-110vh;
+bottom:-80vh;
 left:10vw;
 transform-origin: left center;
 position: absolute;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(0.8px);
+width:75vw;
+/* filter: blur(0.8px); */
 `;
 
-const AddRestaurant = styled.img.attrs({
+const Greenship = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.45)`,
+    transform: `translate(0px,-${(scroll) * 2}%)`,
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-105vh;
+bottom:-95vh;
 right: 10vw;
 transform-origin: right center;
 position: absolute;
 /* border: 1px dashed red; */
-height: 80vh;
-filter: blur(1.2px);
+width:75vw;
+/* filter: blur(1.2px); */
 `;
 
-class WhatsMyFoodImages extends Component {
+class Ecommerce extends Component {
   render() {
     let { scrollPercent } = this.props;
     const {
@@ -81,16 +81,24 @@ class WhatsMyFoodImages extends Component {
     }
     return (
       <React.Fragment>
-        <AddFood src={addFoodImg} scroll={scrollPercent} alt="addFood" />
-        <AddRestaurant src={addRestaurantImg} scroll={scrollPercent} alt="addRestaurant" />
-        <Home src={homeImg} scroll={scrollPercent} alt="Home" />
-        <Restaurant src={restaurantImg} scroll={scrollPercent} alt="Restaurant" />
+        <a href="https://web.archive.org/web/20190802080207/http://dutaponsel.com/id/" target="_blank" rel="noreferrer">
+          <Dutaponsel src={dutaponsel} scroll={scrollPercent} alt="dutaponsel" />
+        </a>
+        <a href="https://petcann.com.au" target="_blank" rel="noreferrer">
+          <Petcann src={petcann} scroll={scrollPercent} alt="petcann" />
+        </a>
+        <a href="https://urbanleaf.com.au" target="_blank" rel="noreferrer">
+          <Urbanleaf src={urbanleaf} scroll={scrollPercent} alt="urbanleaf" />
+        </a>
+        <a href="https://greenship.com.au" target="_blank" rel="noreferrer">
+          <Greenship src={greenship} scroll={scrollPercent} alt="greenship" />
+        </a>
       </React.Fragment>
     );
   }
 }
 
-WhatsMyFoodImages.propTypes = {
+Ecommerce.propTypes = {
   boxHeight: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
   screenHeight: PropTypes.number.isRequired,
@@ -98,4 +106,4 @@ WhatsMyFoodImages.propTypes = {
   scrollPercent: PropTypes.number.isRequired,
 };
 
-export default WhatsMyFoodImages;
+export default Ecommerce;

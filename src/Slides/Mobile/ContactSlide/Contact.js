@@ -38,7 +38,7 @@ const Container = styled.section`
 `;
 
 const ContactTitle = styled.div`
-  font-family: 'AvenirHeavy';
+  font-family: 'Ubuntu';
   color: #000;
   @media ${device.mobileS} {
     font-size: 40px;

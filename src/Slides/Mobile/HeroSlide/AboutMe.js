@@ -13,7 +13,7 @@ const Container = styled.section`
 `;
 
 const AboutMeDescription = styled.span`
-  font-family: 'AvenirRoman';
+  font-family: 'Ubuntu';
   font-size: 24px;
   text-align: center;
   @media ${device.mobileS} {
