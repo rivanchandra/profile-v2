@@ -14,7 +14,7 @@ const Yearglance = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -90vh;
+bottom: -30vh;
 left:0vw;
 /* border: 1px dashed red; */
 width: 45vw; 
@@ -27,7 +27,7 @@ const Skyjed = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom:-95vh;
+bottom:-45vh;
 right: 2vw;
 /* border: 1px dashed red; */
 width: 45vw;
@@ -40,7 +40,7 @@ const Booking = styled.img.attrs({
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-95vh;
+bottom:-65vh;
 left:2vw;
 position: absolute;
 /* border: 1px dashed red; */
@@ -50,7 +50,7 @@ width: 45vw;
 
 const Digitime = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.8)`,
+    transform: `translate(0px,-${(scroll) * 4}%) scale(0.8)`,
   }),
 })`
 transition: transform 0.2s ease-out;
@@ -62,7 +62,7 @@ width: 45vw;
 /* filter: blur(1.2px); */
 `;
 
-class VoistrapImages extends Component {
+class WebApp extends Component {
   render() {
     let { scrollPercent } = this.props;
     const {
@@ -74,16 +74,24 @@ class VoistrapImages extends Component {
     scrollPercent -= scrollOffsetInPercent;
     return (
       <React.Fragment>
-        <Digitime src={digitime} scroll={scrollPercent} alt="digitime" />
-        <Booking src={booking} scroll={scrollPercent} alt="booking" />
-        <Skyjed src={skyjed} scroll={scrollPercent} alt="skyjed" />
-        <Yearglance src={yearglance} scroll={scrollPercent} alt="yearglance" />
+        <a href="https://app.digitime.com.au" target="_blank" rel="noreferrer">
+          <Digitime src={digitime} scroll={scrollPercent} alt="digitime" />
+        </a>
+        <a href="https://www.backinmotion.com.au" target="_blank" rel="noreferrer">
+          <Booking src={booking} scroll={scrollPercent} alt="booking" />
+        </a>
+        <a href="https://www.skyjed.com" target="_blank" rel="noreferrer">
+          <Skyjed src={skyjed} scroll={scrollPercent} alt="skyjed" />
+        </a>
+        <a href="https://app.yearglance.com" target="_blank" rel="noreferrer">
+          <Yearglance src={yearglance} scroll={scrollPercent} alt="yearglance" />
+        </a>
       </React.Fragment>
     );
   }
 }
 
-VoistrapImages.propTypes = {
+WebApp.propTypes = {
   boxHeight: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
   screenHeight: PropTypes.number.isRequired,
@@ -91,4 +99,4 @@ VoistrapImages.propTypes = {
   scrollPercent: PropTypes.number.isRequired,
 };
 
-export default VoistrapImages;
+export default WebApp;

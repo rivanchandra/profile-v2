@@ -9,12 +9,12 @@ import personal from '../../../../Assets/Images/Personal/personal.png';
 
 const Beautify = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 10}%) scale(0.8)`,
+    transform: `translate(0px,-${(scroll) * 12}%) scale(0.8)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -90vh;
+bottom: -10vh;
 right:8vw;
 /* border: 1px dashed red; */
 width: 45vw;
@@ -27,7 +27,7 @@ const Lofsong = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom:-45vh;
+bottom:-35vh;
 right: 2vw;
 /* border: 1px dashed red; */
 width: 45vw;
@@ -36,12 +36,12 @@ width: 45vw;
 
 const Monthlyexpen = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 5}%) scale(0.9)`,
+    transform: `translate(0px,-${(scroll) * 7}%) scale(0.9)`,
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-65vh;
-left:2vw;
+bottom:-55vh;
+right:8vw;
 position: absolute;
 /* border: 1px dashed red; */
 width: 45vw;
@@ -50,11 +50,11 @@ width: 45vw;
 
 const Personal = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.8)`,
+    transform: `translate(0px,-${(scroll) * 6}%) scale(0.8)`,
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-75vh;
+bottom:-85vh;
 right: 5vw;
 position: absolute;
 /* border: 1px dashed red; */
@@ -62,7 +62,7 @@ width: 45vw;
 /* filter: blur(1.2px); */
 `;
 
-class TeslaImages extends Component {
+class PersonalProjects extends Component {
   render() {
     let { scrollPercent } = this.props;
     const {
@@ -75,16 +75,24 @@ class TeslaImages extends Component {
 
     return (
       <React.Fragment>
-        <Beautify src={beautify} scroll={scrollPercent} alt="beautify" />
-        <Lofsong src={lofsong} scroll={scrollPercent} alt="lofsong" />
-        <Monthlyexpen src={monthlyexpen} scroll={scrollPercent} alt="monthlyexpen" />
-        <Personal src={personal} scroll={scrollPercent} alt="personal" />
+        <a href="https://beauty-text.vercel.app" target="_blank" rel="noreferrer">
+          <Beautify src={beautify} scroll={scrollPercent} alt="beautify" />
+        </a>
+        <a href="https://lofsong.vercel.app" target="_blank" rel="noreferrer">
+          <Lofsong src={lofsong} scroll={scrollPercent} alt="lofsong" />
+        </a>
+        <a href="https://monthly-expen-demo.web.app" target="_blank" rel="noreferrer">
+          <Monthlyexpen src={monthlyexpen} scroll={scrollPercent} alt="monthlyexpen" />
+        </a>
+        <a href="https://rivan-profile.vercel.app" target="_blank" rel="noreferrer">
+          <Personal src={personal} scroll={scrollPercent} alt="personal" />
+        </a>
       </React.Fragment>
     );
   }
 }
 
-TeslaImages.propTypes = {
+PersonalProjects.propTypes = {
   boxHeight: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
   screenHeight: PropTypes.number.isRequired,
@@ -92,4 +100,4 @@ TeslaImages.propTypes = {
   scrollPercent: PropTypes.number.isRequired,
 };
 
-export default TeslaImages;
+export default PersonalProjects;

@@ -14,7 +14,7 @@ const Backinmotion = styled.img.attrs({
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom:-70vh;
+bottom:-10vh;
 left: 0vw;
 /* border: 1px dashed red; */
 width: 45vw;
@@ -22,12 +22,12 @@ width: 45vw;
 
 const Cantabile = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.94)`,
+    transform: `translate(0px,-${(scroll) * 8}%) scale(0.94)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -40vh;
+bottom:-30vh;
 right:0vw;
 /* border: 1px dashed red; */
 width: 45vw; 
@@ -40,7 +40,7 @@ const Frostfence = styled.img.attrs({
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-45vh;
+bottom:-50vh;
 left:2vw;
 position: absolute;
 /* border: 1px dashed red; */
@@ -54,7 +54,7 @@ const Carrotsolutions = styled.img.attrs({
   }),
 })`
 transition: transform 0.2s ease-out;
-bottom:-85vh;
+bottom:-75vh;
 right: 8vw;
 position: absolute;
 /* border: 1px dashed red; */
@@ -62,7 +62,7 @@ width: 50vw;
 /* filter: blur(1.2px); */
 `;
 
-class ComingOrNotImages extends Component {
+class Website extends Component {
   render() {
     let { scrollPercent } = this.props;
     const {
@@ -75,16 +75,24 @@ class ComingOrNotImages extends Component {
 
     return (
       <React.Fragment>
-        <Backinmotion src={backinmotion} scroll={scrollPercent} alt="backinmotion" />
-        <Cantabile src={cantabile} scroll={scrollPercent} alt="cantabile" />
-        <Frostfence src={frostfence} scroll={scrollPercent} alt="frostfence" />
-        <Carrotsolutions src={carrotsolutions} scroll={scrollPercent} alt="carrotsolutions" />
+        <a href="https://www.backinmotion.com.au" target="_blank" rel="noreferrer">
+          <Backinmotion src={backinmotion} scroll={scrollPercent} alt="backinmotion" />
+        </a>
+        <a href="http://www.cantabilemusicschool.com" target="_blank" rel="noreferrer">
+          <Cantabile src={cantabile} scroll={scrollPercent} alt="cantabile" />
+        </a>
+        <a href="https://frostfence.com" target="_blank" rel="noreferrer">
+          <Frostfence src={frostfence} scroll={scrollPercent} alt="frostfence" />
+        </a>
+        <a href="https://carrotsolutions.com.au" target="_blank" rel="noreferrer">
+          <Carrotsolutions src={carrotsolutions} scroll={scrollPercent} alt="carrotsolutions" />
+        </a>
       </React.Fragment>
     );
   }
 }
 
-ComingOrNotImages.propTypes = {
+Website.propTypes = {
   boxHeight: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
   screenHeight: PropTypes.number.isRequired,
@@ -92,4 +100,4 @@ ComingOrNotImages.propTypes = {
   scrollPercent: PropTypes.number.isRequired,
 };
 
-export default ComingOrNotImages;
+export default Website;
