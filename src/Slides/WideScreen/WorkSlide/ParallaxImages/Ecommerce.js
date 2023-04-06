@@ -50,7 +50,7 @@ width: 45vw;
 
 const Greenship = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 2}%) scale(0.6)`,
+    transform: `translate(0px,-${(scroll) * 2}%) scale(0.8)`,
   }),
 })`
 transition: transform 0.2s ease-out;
@@ -58,7 +58,7 @@ bottom:-85vh;
 right: 8vw;
 position: absolute;
 /* border: 1px dashed red; */
-width: 50vw;
+width: 45vw;
 /* filter: blur(1.2px); */
 `;
 

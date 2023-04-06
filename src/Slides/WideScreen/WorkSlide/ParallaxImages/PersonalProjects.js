@@ -50,7 +50,7 @@ width: 45vw;
 
 const Personal = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 6}%) scale(0.8)`,
+    transform: `translate(0px,-${(scroll) * 6}%) scale(0.9)`,
   }),
 })`
 transition: transform 0.2s ease-out;

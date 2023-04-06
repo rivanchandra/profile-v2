@@ -36,7 +36,7 @@ width: 45vw;
 
 const Booking = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 5}%) scale(0.7)`,
+    transform: `translate(0px,-${(scroll) * 5}%) scale(0.9)`,
   }),
 })`
 transition: transform 0.2s ease-out;
@@ -50,7 +50,7 @@ width: 45vw;
 
 const Digitime = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 4}%) scale(0.8)`,
+    transform: `translate(0px,-${(scroll) * 4}%) scale(0.9)`,
   }),
 })`
 transition: transform 0.2s ease-out;

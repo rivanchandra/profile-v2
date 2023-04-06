@@ -50,7 +50,7 @@ width: 45vw;
 
 const Carrotsolutions = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 3}%) scale(0.6)`,
+    transform: `translate(0px,-${(scroll) * 3}%) scale(0.9)`,
   }),
 })`
 transition: transform 0.2s ease-out;

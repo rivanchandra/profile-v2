@@ -14,25 +14,25 @@ height:100vh;
 width: 100%;
 `;
 
-const ProjectName = styled.div`
-  font-family: 'Ubuntu';
-  @media ${device.mobileS} {
-    font-size: 40px;
-  }
-  @media ${device.mobileM} {
-    font-size: 45px;
-  }
-  @media ${device.mobileL} {
-    font-size: 50px;
-  }
-  @media ${device.tablet} {
-    font-size: 60px;
-  }
-  @media ${device.laptop} {
-    font-size: 90px;
-  }
-  /* border: 1px dashed black; */
-`;
+// const ProjectName = styled.div`
+//   font-family: 'Ubuntu';
+//   @media ${device.mobileS} {
+//     font-size: 40px;
+//   }
+//   @media ${device.mobileM} {
+//     font-size: 45px;
+//   }
+//   @media ${device.mobileL} {
+//     font-size: 50px;
+//   }
+//   @media ${device.tablet} {
+//     font-size: 60px;
+//   }
+//   @media ${device.laptop} {
+//     font-size: 90px;
+//   }
+//   /* border: 1px dashed black; */
+// `;
 
 const ProjectDesc = styled.div`
   padding-top:2%;
@@ -47,7 +47,7 @@ const ProjectDesc = styled.div`
 `;
 
 const MyRole = styled.div`
-  padding-top:5%;
+  // padding-top:5%;
   font-family: 'Ubuntu';
   @media ${device.laptopL} {
     font-size: 30px;
@@ -67,7 +67,9 @@ const ProjectID = styled.div`
     font-size: 58px;
   }
   /* border: 1px dashed black; */
-  padding: 5%;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 `;
 
 const ProjectType = styled.div`
@@ -79,7 +81,8 @@ const ProjectType = styled.div`
     font-size: 58px;
   }
   /* border: 1px dashed black; */
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 `;
 
 const ProjectDetails = styled.div`
@@ -87,7 +90,8 @@ display: flex;
 flex-flow: column nowrap;
 /* border: 1px dashed black; */
 width: 100%;
-padding: 5%;
+padding-left: 5%;
+padding-right: 5%;
 `;
 
 
@@ -141,6 +145,9 @@ margin-right: 5px;
 }
 `;
 
+const BlockImages = styled.span`
+`;
+
 class TextContent extends Component {
   constructor(props) {
     super(props);
@@ -168,7 +175,7 @@ class TextContent extends Component {
 
   render() {
     const {
-      number, projectName, projectDesc, techs, projectType, refreshToggle,
+      number, projectDesc, techs, websites, projectType, refreshToggle,
     } = this.props;
     return (
       <TextContainer>
@@ -179,11 +186,11 @@ class TextContent extends Component {
         </ProjectID>
         <ProjectDetailsContainer>
           <ProjectDetails>
-            <ProjectName>
+            {/* <ProjectName>
               <BlockTextReveal refreshToggle={refreshToggle} inline>
                 {projectName}
               </BlockTextReveal>
-            </ProjectName>
+            </ProjectName> */}
             <MyRole>
               <BlockTextReveal refreshToggle={refreshToggle} inline>
                 {techs.map(tech => (
@@ -198,6 +205,15 @@ class TextContent extends Component {
                 {projectDesc}
               </BlockTextReveal>
             </ProjectDesc>
+            <BlockImages refreshToggle={refreshToggle}>
+              {websites.map(website => (
+                <div>
+                  <a href={website.url} target="_blank" rel="noreferrer">
+                    <img src={website.src} alt={website.alt} style={{ width: '80vw' }} />
+                  </a>
+                </div>
+              ))}
+            </BlockImages>
           </ProjectDetails>
         </ProjectDetailsContainer>
 
@@ -213,10 +229,11 @@ class TextContent extends Component {
 
 TextContent.propTypes = {
   number: PropTypes.string.isRequired,
-  projectName: PropTypes.string.isRequired,
+  // projectName: PropTypes.string.isRequired,
   projectDesc: PropTypes.string.isRequired,
   projectType: PropTypes.string.isRequired,
   techs: PropTypes.array.isRequired,
+  websites: PropTypes.array.isRequired,
   refreshToggle: PropTypes.bool.isRequired,
 };
 
