@@ -53,7 +53,7 @@ class Work extends Component {
         number: '04',
         projectName: '',
         projectDesc: 'Captivating web apps with unique content and concept, allowing for self-expression and creativity.',
-        projectType: 'Personal Projects',
+        projectType: 'Personal Project',
         techs: ['React', 'NextJS', 'Firebase', 'API'],
       },
       {

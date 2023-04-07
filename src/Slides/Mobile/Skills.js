@@ -82,9 +82,9 @@ class Skills extends Component {
           <div>
             HTML/CSS/JS
             <br />
-            React
+            ReactJS
             <br />
-            Vue
+            NEXTJS
             <br />
             <br />
             Design system
@@ -101,9 +101,9 @@ class Skills extends Component {
             User experience
             <br />
             <br />
-            Next
+            LINQ
             <br />
-            API
+            REST API
             <br />
             SQL
             <br />
