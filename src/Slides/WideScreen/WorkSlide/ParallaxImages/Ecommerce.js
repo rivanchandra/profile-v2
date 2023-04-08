@@ -18,6 +18,11 @@ bottom: -10vh;
 left:0vw;
 /* border: 1px dashed red; */
 width: 45vw;
+
+&:hover {
+  filter: brightness(0.6);
+  transition: filter 0.5s ease-in-out;
+}
 `;
 
 const Petcann = styled.img.attrs({
@@ -31,7 +36,11 @@ bottom:-45vh;
 right: 9vw;
 /* border: 1px dashed red; */
 width: 45vw;
-/* filter: blur(0.6px); */
+
+&:hover {
+  filter: brightness(0.6);
+  transition: filter 0.5s ease-in-out;
+}
 `;
 
 const Urbanleaf = styled.img.attrs({
@@ -45,7 +54,11 @@ left:4vw;
 position: absolute;
 /* border: 1px dashed red; */
 width: 45vw;
-/* filter: blur(0.8px); */
+
+&:hover {
+  filter: brightness(0.6);
+  transition: filter 0.5s ease-in-out;
+}
 `;
 
 const Greenship = styled.img.attrs({
@@ -59,7 +72,11 @@ right: 8vw;
 position: absolute;
 /* border: 1px dashed red; */
 width: 45vw;
-/* filter: blur(1.2px); */
+
+&:hover {
+  filter: brightness(0.6);
+  transition: filter 0.5s ease-in-out;
+}
 `;
 
 class Ecommerce extends Component {

@@ -18,6 +18,11 @@ bottom: -10vh;
 right:8vw;
 /* border: 1px dashed red; */
 width: 45vw;
+
+&:hover {
+  filter: brightness(0.6);
+  transition: filter 0.5s ease-in-out;
+}
 `;
 
 const Lofsong = styled.img.attrs({
@@ -31,7 +36,11 @@ bottom:-35vh;
 right: 2vw;
 /* border: 1px dashed red; */
 width: 45vw;
-/* filter: blur(0.6px); */
+
+&:hover {
+  filter: brightness(0.6);
+  transition: filter 0.5s ease-in-out;
+}
 `;
 
 const Monthlyexpen = styled.img.attrs({
@@ -45,7 +54,11 @@ right:8vw;
 position: absolute;
 /* border: 1px dashed red; */
 width: 45vw;
-/* filter: blur(0.8px); */
+
+&:hover {
+  filter: brightness(0.6);
+  transition: filter 0.5s ease-in-out;
+}
 `;
 
 const Personal = styled.img.attrs({
@@ -59,7 +72,11 @@ right: 5vw;
 position: absolute;
 /* border: 1px dashed red; */
 width: 45vw;
-/* filter: blur(1.2px); */
+
+&:hover {
+  filter: brightness(0.6);
+  transition: filter 0.5s ease-in-out;
+}
 `;
 
 class PersonalProjects extends Component {
