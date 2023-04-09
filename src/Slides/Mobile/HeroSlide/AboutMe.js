@@ -44,7 +44,7 @@ class AboutMe extends Component {
       <Container>
         <AboutMeDescription>
           {/* eslint-disable-next-line max-len */}
-          Client centric software developer with high proficient in web development, software system analysis, and database design.
+          Client centric software developer with highly proficient in web development, software system analysis, and database design.
         </AboutMeDescription>
       </Container>
     );
