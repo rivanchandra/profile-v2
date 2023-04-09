@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import beautify from '../../../../Assets/Images/Personal/beautify.png';
 import lofsong from '../../../../Assets/Images/Personal/lofsong.png';
 import monthlyexpen from '../../../../Assets/Images/Personal/monthlyexpen.png';
-import personal from '../../../../Assets/Images/Personal/personal.png';
+import weatherapp from '../../../../Assets/Images/Personal/weatherapp.png';
 
 const Beautify = styled.img.attrs({
   style: ({ scroll }) => ({
@@ -101,8 +101,8 @@ class PersonalProjects extends Component {
         <a href="https://monthly-expen-demo.web.app" target="_blank" rel="noreferrer">
           <Monthlyexpen src={monthlyexpen} scroll={scrollPercent} alt="monthlyexpen" />
         </a>
-        <a href="https://rivan-profile.vercel.app" target="_blank" rel="noreferrer">
-          <Personal src={personal} scroll={scrollPercent} alt="personal" />
+        <a href="https://rivan-weather.vercel.app/" target="_blank" rel="noreferrer">
+          <Personal src={weatherapp} scroll={scrollPercent} alt="weatherapp" />
         </a>
       </React.Fragment>
     );
