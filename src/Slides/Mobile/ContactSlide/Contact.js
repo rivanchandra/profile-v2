@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import twitterImg from '../../../Assets/Images/Social/twitter.svg';
 import githubImg from '../../../Assets/Images/Social/git.svg';
+import codepenImg from '../../../Assets/Images/Social/codepen.svg';
 import mailImg from '../../../Assets/Images/Social/mail.svg';
 import instaImg from '../../../Assets/Images/Social/insta.svg';
-import dribbbleImg from '../../../Assets/Images/Social/dribbble.svg';
 import linkedInImg from '../../../Assets/Images/Social/linkedin.svg';
 import SocialLogo from './SocialLogo';
 import device from '../../../Assets/Responsive/breakpoints';
@@ -91,6 +90,7 @@ class Contact extends Component {
         <ContactTitle>CONTACT</ContactTitle>
         <SocialMediaIcons>
           <SocialLogo imgURL={githubImg} alternate="Github" redirectURL="https://github.com/rivanchandra" />
+          <SocialLogo imgURL={codepenImg} alternate="Codepen" redirectURL="https://codepen.io/rivan-chandra" />
           <SocialLogo imgURL={mailImg} alternate="Mail" redirectURL="mailto:rivanchan@gmail.com" />
           <SocialLogo imgURL={instaImg} alternate="Instagram" redirectURL="https://www.instagram.com/rivan_chandra" />
           <SocialLogo imgURL={linkedInImg} alternate="Linkedin" redirectURL="https://www.linkedin.com/in/rivanchandra" />
