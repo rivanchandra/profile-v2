@@ -92,8 +92,8 @@ class PersonalProjects extends Component {
 
     return (
       <React.Fragment>
-        <a href="https://beauty-text.vercel.app" target="_blank" rel="noreferrer">
-          <Beautify src={beautify} scroll={scrollPercent} alt="beautify" />
+        <a href="https://github-profile-help.vercel.app" target="_blank" rel="noreferrer">
+          <Beautify src={beautify} scroll={scrollPercent} alt="github-profile-help" />
         </a>
         <a href="https://lofsong.vercel.app" target="_blank" rel="noreferrer">
           <Lofsong src={lofsong} scroll={scrollPercent} alt="lofsong" />
@@ -101,8 +101,8 @@ class PersonalProjects extends Component {
         <a href="https://monthly-expen-demo.web.app" target="_blank" rel="noreferrer">
           <Monthlyexpen src={monthlyexpen} scroll={scrollPercent} alt="monthlyexpen" />
         </a>
-        <a href="https://rivan-weather.vercel.app/" target="_blank" rel="noreferrer">
-          <Personal src={weatherapp} scroll={scrollPercent} alt="weatherapp" />
+        <a href="https://got-music.vercel.app/" target="_blank" rel="noreferrer">
+          <Personal src={weatherapp} scroll={scrollPercent} alt="got-music" />
         </a>
       </React.Fragment>
     );
