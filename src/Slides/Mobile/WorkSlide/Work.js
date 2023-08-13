@@ -9,7 +9,7 @@ import cantabile from '../../../Assets/Images/Website/cantabile.png';
 import petcann from '../../../Assets/Images/Ecommerce/petcann.png';
 import urbanleaf from '../../../Assets/Images/Ecommerce/urbanleaf.png';
 // Personal
-import lofsong from '../../../Assets/Images/Personal/lofsong.png';
+import lofsong from '../../../Assets/Images/Personal/chillofy.png';
 import monthlyexpen from '../../../Assets/Images/Personal/monthlyexpen.png';
 // WebApp
 import digitime from '../../../Assets/Images/WebApp/digitime.png';
@@ -19,7 +19,7 @@ const Container = styled.div`
   display: flex;
   flex-flow: row nowrap;
   /* border: 1px dashed red; */
-  height:380vh;
+  height:370vh;
 `;
 
 class Work extends Component {
@@ -79,7 +79,7 @@ class Work extends Component {
         projectType: 'Personal Project',
         techs: ['React', 'NextJS', 'Firebase', 'API'],
         websites: [
-          { url: 'https://lofsong.vercel.app', src: lofsong, alt: 'lofsong' },
+          { url: 'https://chillofy.vercel.app', src: lofsong, alt: 'chillofy' },
           { url: 'https://monthly-expen-demo.web.app', src: monthlyexpen, alt: 'monthlyexpen' }],
       },
       {

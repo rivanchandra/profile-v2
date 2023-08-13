@@ -3,18 +3,18 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import beautify from '../../../../Assets/Images/Personal/beautify.png';
-import lofsong from '../../../../Assets/Images/Personal/lofsong.png';
+import lofsong from '../../../../Assets/Images/Personal/chillofy.png';
 import monthlyexpen from '../../../../Assets/Images/Personal/monthlyexpen.png';
 import weatherapp from '../../../../Assets/Images/Personal/weatherapp.png';
 
 const Beautify = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 12}%) scale(0.8)`,
+    transform: `translate(0px,-${(scroll) * 11}%) scale(0.8)`,
   }),
 })`
 transition: transform 0.2s ease-out;
 position: absolute;
-bottom: -10vh;
+bottom: -8vh;
 right:8vw;
 /* border: 1px dashed red; */
 width: 45vw;
@@ -27,7 +27,7 @@ width: 45vw;
 
 const Lofsong = styled.img.attrs({
   style: ({ scroll }) => ({
-    transform: `translate(0px,-${(scroll) * 8}%) scale(0.9)`,
+    transform: `translate(0px,-${(scroll) * 10}%) scale(0.9)`,
   }),
 })`
 transition: transform 0.2s ease-out;
@@ -95,8 +95,8 @@ class PersonalProjects extends Component {
         <a href="https://github-profile-help.vercel.app" target="_blank" rel="noreferrer">
           <Beautify src={beautify} scroll={scrollPercent} alt="github-profile-help" />
         </a>
-        <a href="https://lofsong.vercel.app" target="_blank" rel="noreferrer">
-          <Lofsong src={lofsong} scroll={scrollPercent} alt="lofsong" />
+        <a href="https://chillofy.vercel.app" target="_blank" rel="noreferrer">
+          <Lofsong src={lofsong} scroll={scrollPercent} alt="chillofy" />
         </a>
         <a href="https://monthly-expen-demo.web.app" target="_blank" rel="noreferrer">
           <Monthlyexpen src={monthlyexpen} scroll={scrollPercent} alt="monthlyexpen" />
