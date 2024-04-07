@@ -62,7 +62,7 @@ class NameAndJobTitle extends Component {
       <Container>
         <img className="avatar" src={avatar} alt="avatar" />
         <Name>Rivan Chandra</Name>
-        <Title>Software Developer</Title>
+        <Title>Solution Developer</Title>
       </Container>
     );
   }
