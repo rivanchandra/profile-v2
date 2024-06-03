@@ -94,7 +94,7 @@ class WebApp extends Component {
     scrollPercent -= scrollOffsetInPercent;
     return (
       <React.Fragment>
-        <a href="https://app.digitime.com.au" target="_blank" rel="noreferrer">
+        <a href="https://carrotsolutions.com.au/products/digitime" target="_blank" rel="noreferrer">
           <Digitime src={digitime} scroll={scrollPercent} alt="digitime" />
         </a>
         <a href="https://www.backinmotion.com.au" target="_blank" rel="noreferrer">
